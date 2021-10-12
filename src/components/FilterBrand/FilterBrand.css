@@ -1,0 +1,26 @@
+.brand {
+  padding-bottom: 33px;
+  margin-bottom: 33px
+}
+
+.brand__title {
+  padding-bottom: 26px
+}
+
+.brand__lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.brand__check-item {
+  padding-bottom: 16px
+}
+
+.brand__list-num {
+  text-align: right
+}
+
+.brand__num-item {
+  padding-bottom: 17px
+}

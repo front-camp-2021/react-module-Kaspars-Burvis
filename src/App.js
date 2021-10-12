@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Header from "./components/Header/Header";
+import FilterContainer from "./components/FilterContainer/FilterContainer";
+import ProductContainer from "./components/ProductContainer/ProductContainer";
+import Pagination from "./components/Pagination/Pagination";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="site">
+      <Header />
+      <div className="site-body container">
+        <FilterContainer />
+        <ProductContainer />
+      </div>
+      <Pagination />
     </div>
   );
 }
