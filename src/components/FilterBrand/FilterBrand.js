@@ -1,24 +1,12 @@
 import React from 'react'
 import "./FilterBrand.css"
+import { useSelector } from 'react-redux'
 
-const brands = [
-  "Asus",
-  "Acer",
-  "Apple",
-  "Dell",
-  "Dynamode",
-  "Gigabyte",
-  "Kingston",
-  "Lenovo",
-  "Logitech",
-  "MSI",
-  "BenQ",
-  "A4Tech"
-]
 
 function FilterBrand() {
+  const brands = useSelector(state => state.brands)
 
-const brandList = brands.map(brand => (
+  const brandList = brands.map(brand => (
   <div class="brand__check-item">
     <input type="checkbox" name="brnd" id="brand1" />
     <label for="brand1">{brand} </label>

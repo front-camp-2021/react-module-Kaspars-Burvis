@@ -1,18 +1,11 @@
 import React from 'react'
 import './FilterCategory.css'
-
-const categories = [
-  "Monitors",
-  "Laptops",
-  "Video cards",
-  "Gaming keyboards",
-  "Computer mouse",
-  "SSD",
-  "Sound cards",
-  "RAM"
-]
+import { useSelector } from 'react-redux'
 
 function FilterCategory() {
+
+  const categories = useSelector(state => state.categories)
+  
   const categoryList = categories.map(item => (
   <div className="category__check-item">
     <input type="checkbox" name="categor" id="category1" />
