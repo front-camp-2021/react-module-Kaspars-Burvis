@@ -1,19 +1,24 @@
-import React from "react";
-import './App.css';
-import Header from "./components/Header/Header";
-import FilterContainer from "./components/FilterContainer/FilterContainer";
-import ProductContainer from "./components/ProductContainer/ProductContainer";
-import Pagination from "./components/Pagination/Pagination";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import './scss/app.scss';
+import { Electronics, Wish } from './containers';
+import { Header, Pagination, Breadcrumbs } from './components';
 
 function App() {
   return (
-    <div className="site">
+    <div className='site'>
       <Header />
-      <div className="site-body container">
-        <FilterContainer />
-        <ProductContainer />
+      <Breadcrumbs />
+      <div>
+        <Routes>
+          <Route path='/' element={<Electronics />} />
+          <Route path='/wish' element={<Wish />} />
+          <Route path='/*' element={<Electronics />} />
+        </Routes>
       </div>
-      <Pagination />
+      <Routes>
+        <Route path='/' element={<Pagination />} />
+      </Routes>
     </div>
   );
 }

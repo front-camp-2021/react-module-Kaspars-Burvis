@@ -1,0 +1,22 @@
+.category {
+  border-bottom: 1px solid #d6d6d6;
+  padding: 15px 0 33px 0;
+
+  &__title {
+    padding-bottom: 26px;
+  }
+
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding-bottom: 16px;
+  }
+
+  span {
+    padding-left: 15px;
+  }
+}

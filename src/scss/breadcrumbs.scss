@@ -1,0 +1,14 @@
+.breadcrumbs {
+  display: flex;
+  padding: 15px 0;
+  
+  &__icon-house {
+    color: #7e72f2;
+  }
+  
+  &__icon-chevrons {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+}
+

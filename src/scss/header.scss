@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    height: 72px;
+    width: 91px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #7e72f2;
+    padding-left: 22px;
+  }
+}
