@@ -1,0 +1,10 @@
+export const GET_PRODUCTS = 'GET_PRODUCTS';
+export const PRODUCTS_LOAD = 'PRODUCTS_LOAD';
+export const SET_TOTAL_CARDS = 'SET_TOTAL_CARDS';
+export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+export const SET_SEARCH_PRODUCTS = 'SET_SEARCH_PRODUCTS';
+export const SET_WISH_LIST = 'SET_WISH_LIST';
+
+export const SET_CATEGORIES = 'SET_CATEGORIES';
+
+export const SET_BRANDS = 'SET_BRANDS';
